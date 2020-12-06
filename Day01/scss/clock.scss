@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    &.night{
+        background-color: #666;
+    }
+    min-height: 3000px;;
+}
+
+#header{
+    //position: fixed;
+    position: absolute;//lnb효과를 적용하기 위해 absolute 적용
+    left: 50px;
+    right: 50px;
+    top: 30px;
+    height: 100px;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+    transition: all 0.25s ease;
+    &.scroll{
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: rgb(204, 162, 162);
+        border-bottom: #f00;
+        box-shadow: 0 5px 5px #eee;
+    }
+}
+
+#subVisula{
+    width: 100%;
+    height: 350px;
+    background-color: greenyellow;
+}
+#lnb{
+    width: 200px;
+    height: 80px;
+    background-color: blue;
+    margin: 0 auto;
+    transition: all 0.25s ease;
+    &.scroll{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        margin-top: 0;
+        // ~: 자기 이웃 전부 다
+        // +: 밑에있는 siblig
+        //css는 밑에서 위로 선택할 수 없음
+        +h2{
+            margin-top: 180px;
+        }
+    }
+}
+h2{
+    font-size: 38px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#clock{
+    &.night{
+        border-color: #fff;
+        transition: all 0.5s ease;
+        &:hover{
+            background-color: #fff;
+        }
+    }
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+    border: 10px solid #000;
+    border-radius: 100%;
+    div{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform-origin: 50% 100%;//축 위치 바꾸기
+    }
+    .sec{
+        width: 2px;
+        height: 250px;
+        background-color: red;
+        margin-left: -1px;
+        //transform: rotate(60deg);//축 회전 시키기
+    }
+    .min{
+        width: 4px;
+        height: 200px;
+        background-color: blue;
+        margin-left: -2px;
+        margin-top: 50px;
+    }
+    .hour{
+        width: 4px;
+        height: 150px;
+        background-color: greenyellow;
+        margin-left: -2px;
+        margin-top: 100px;
+    }
+}

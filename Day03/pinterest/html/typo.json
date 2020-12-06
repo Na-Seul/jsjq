@@ -1,0 +1,206 @@
+{
+    "imageFolder":"../images/",
+    "typoList":[
+        {
+            "img":"01.jpg",
+            "title":"to the unknown man",
+            "desc":"The United States saw the most new coronavirus cases of the pandemic on Friday, with deaths and hospitalizations also rising. Underlying conditions largely determine who survives.",
+            "point":4.5,
+            "category":"paint"
+        },
+        {
+            "img":"02.jpg",
+            "title":"to the known woman",
+            "desc":"In a two-day meeting sponsored by the N.I.H., officials acknowledged an insufficient understanding of the issues and warned of a growing public health problem.",
+            "point":4.1,
+            "category":"photo"
+        },
+        {
+            "img":"03.jpg",
+            "title":"into the unknown",
+            "desc":"Cases are surging along the East Coast and health systems are under strain across the United States. Bahrain has become the second country to grant emergency authorization to a vaccine made by Pfizer and BioNTech.",
+            "point":4.7,
+            "category":"sketch"
+        },{
+            "img":"04.jpg",
+            "title":"to the unknown man",
+            "desc":"The United States saw the most new coronavirus cases of the pandemic on Friday, with deaths and hospitalizations also rising. Underlying conditions largely determine who survives.",
+            "point":4.5,
+            "category":"paint"
+        },
+        {
+            "img":"05.jpg",
+            "title":"to the known woman",
+            "desc":"In a two-day meeting sponsored by the N.I.H., officials acknowledged an insufficient understanding of the issues and warned of a growing public health problem.",
+            "point":4.1,
+            "category":"photo"
+        },
+        {
+            "img":"06.jpg",
+            "title":"into the unknown",
+            "desc":"Cases are surging along the East Coast and health systems are under strain across the United States. Bahrain has become the second country to grant emergency authorization to a vaccine made by Pfizer and BioNTech.",
+            "point":4.7,
+            "category":"sketch"
+        },{
+            "img":"07.jpg",
+            "title":"to the unknown man",
+            "desc":"The United States saw the most new coronavirus cases of the pandemic on Friday, with deaths and hospitalizations also rising. Underlying conditions largely determine who survives.",
+            "point":4.5,
+            "category":"paint"
+        },
+        {
+            "img":"08.jpg",
+            "title":"to the known woman",
+            "desc":"In a two-day meeting sponsored by the N.I.H., officials acknowledged an insufficient understanding of the issues and warned of a growing public health problem.",
+            "point":4.1,
+            "category":"photo"
+        },
+        {
+            "img":"09.jpg",
+            "title":"into the unknown",
+            "desc":"Cases are surging along the East Coast and health systems are under strain across the United States. Bahrain has become the second country to grant emergency authorization to a vaccine made by Pfizer and BioNTech.",
+            "point":4.7,
+            "category":"sketch"
+        },{
+            "img":"10.jpg",
+            "title":"to the unknown man",
+            "desc":"The United States saw the most new coronavirus cases of the pandemic on Friday, with deaths and hospitalizations also rising. Underlying conditions largely determine who survives.",
+            "point":4.5,
+            "category":"paint"
+        },
+        {
+            "img":"11.jpg",
+            "title":"to the known woman",
+            "desc":"In a two-day meeting sponsored by the N.I.H., officials acknowledged an insufficient understanding of the issues and warned of a growing public health problem.",
+            "point":4.1,
+            "category":"photo"
+        },
+        {
+            "img":"12.jpg",
+            "title":"into the unknown",
+            "desc":"Cases are surging along the East Coast and health systems are under strain across the United States. Bahrain has become the second country to grant emergency authorization to a vaccine made by Pfizer and BioNTech.",
+            "point":4.7,
+            "category":"sketch"
+        },{
+            "img":"13.jpg",
+            "title":"to the unknown man",
+            "desc":"The United States saw the most new coronavirus cases of the pandemic on Friday, with deaths and hospitalizations also rising. Underlying conditions largely determine who survives.",
+            "point":4.5,
+            "category":"paint"
+        },
+        {
+            "img":"14.jpg",
+            "title":"to the known woman",
+            "desc":"In a two-day meeting sponsored by the N.I.H., officials acknowledged an insufficient understanding of the issues and warned of a growing public health problem.",
+            "point":4.1,
+            "category":"photo"
+        },
+        {
+            "img":"15.jpg",
+            "title":"into the unknown",
+            "desc":"Cases are surging along the East Coast and health systems are under strain across the United States. Bahrain has become the second country to grant emergency authorization to a vaccine made by Pfizer and BioNTech.",
+            "point":4.7,
+            "category":"sketch"
+        },{
+            "img":"16.jpg",
+            "title":"to the unknown man",
+            "desc":"The United States saw the most new coronavirus cases of the pandemic on Friday, with deaths and hospitalizations also rising. Underlying conditions largely determine who survives.",
+            "point":4.5,
+            "category":"paint"
+        },
+        {
+            "img":"17.jpg",
+            "title":"to the known woman",
+            "desc":"In a two-day meeting sponsored by the N.I.H., officials acknowledged an insufficient understanding of the issues and warned of a growing public health problem.",
+            "point":4.1,
+            "category":"photo"
+        },
+        {
+            "img":"18.jpg",
+            "title":"into the unknown",
+            "desc":"Cases are surging along the East Coast and health systems are under strain across the United States. Bahrain has become the second country to grant emergency authorization to a vaccine made by Pfizer and BioNTech.",
+            "point":4.7,
+            "category":"sketch"
+        },{
+            "img":"19.jpg",
+            "title":"to the unknown man",
+            "desc":"The United States saw the most new coronavirus cases of the pandemic on Friday, with deaths and hospitalizations also rising. Underlying conditions largely determine who survives.",
+            "point":4.5,
+            "category":"paint"
+        },
+        {
+            "img":"20.jpg",
+            "title":"to the known woman",
+            "desc":"In a two-day meeting sponsored by the N.I.H., officials acknowledged an insufficient understanding of the issues and warned of a growing public health problem.",
+            "point":4.1,
+            "category":"photo"
+        },
+        {
+            "img":"21.jpg",
+            "title":"into the unknown",
+            "desc":"Cases are surging along the East Coast and health systems are under strain across the United States. Bahrain has become the second country to grant emergency authorization to a vaccine made by Pfizer and BioNTech.",
+            "point":4.7,
+            "category":"sketch"
+        },{
+            "img":"22.jpg",
+            "title":"to the unknown man",
+            "desc":"The United States saw the most new coronavirus cases of the pandemic on Friday, with deaths and hospitalizations also rising. Underlying conditions largely determine who survives.",
+            "point":4.5,
+            "category":"paint"
+        },
+        {
+            "img":"23.jpg",
+            "title":"to the known woman",
+            "desc":"In a two-day meeting sponsored by the N.I.H., officials acknowledged an insufficient understanding of the issues and warned of a growing public health problem.",
+            "point":4.1,
+            "category":"photo"
+        },
+        {
+            "img":"24.jpg",
+            "title":"into the unknown",
+            "desc":"Cases are surging along the East Coast and health systems are under strain across the United States. Bahrain has become the second country to grant emergency authorization to a vaccine made by Pfizer and BioNTech.",
+            "point":4.7,
+            "category":"sketch"
+        },{
+            "img":"25.jpg",
+            "title":"to the unknown man",
+            "desc":"The United States saw the most new coronavirus cases of the pandemic on Friday, with deaths and hospitalizations also rising. Underlying conditions largely determine who survives.",
+            "point":4.5,
+            "category":"paint"
+        },
+        {
+            "img":"26.jpg",
+            "title":"to the known woman",
+            "desc":"In a two-day meeting sponsored by the N.I.H., officials acknowledged an insufficient understanding of the issues and warned of a growing public health problem.",
+            "point":4.1,
+            "category":"photo"
+        },
+        {
+            "img":"27.jpg",
+            "title":"into the unknown",
+            "desc":"Cases are surging along the East Coast and health systems are under strain across the United States. Bahrain has become the second country to grant emergency authorization to a vaccine made by Pfizer and BioNTech.",
+            "point":4.7,
+            "category":"sketch"
+        },{
+            "img":"28.jpg",
+            "title":"to the unknown man",
+            "desc":"The United States saw the most new coronavirus cases of the pandemic on Friday, with deaths and hospitalizations also rising. Underlying conditions largely determine who survives.",
+            "point":4.5,
+            "category":"paint"
+        },
+        {
+            "img":"29.jpg",
+            "title":"to the known woman",
+            "desc":"In a two-day meeting sponsored by the N.I.H., officials acknowledged an insufficient understanding of the issues and warned of a growing public health problem.",
+            "point":4.1,
+            "category":"photo"
+        },
+        {
+            "img":"30.jpg",
+            "title":"into the unknown",
+            "desc":"Cases are surging along the East Coast and health systems are under strain across the United States. Bahrain has become the second country to grant emergency authorization to a vaccine made by Pfizer and BioNTech.",
+            "point":4.7,
+            "category":"sketch"
+        }
+    ]
+}

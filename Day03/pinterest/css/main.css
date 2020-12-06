@@ -1,0 +1,64 @@
+* { box-sizing: border-box; }
+
+body { font-family: "Open Sans", sans-serif; font-size: 16px; background-color: #333; }
+
+a { color: inherit; text-decoration: none; cursor: none; }
+
+button { cursor: none; }
+
+#title { margin: 100px 0; font-size: 48px; font-weight: 300; color: #fff; text-align: center; text-shadow: 0px 0px #1274e5, 1px 1px #1274e5, 2px 2px #1274e5, 3px 3px #1274e5, 4px 4px #1274e5, 5px 5px #1274e5, 6px 6px #1274e5, 7px 7px #1274e5, 8px 8px #1274e5, 9px 9px #1274e5, 10px 10px #1274e5, 11px 11px #1274e5, 12px 12px #1274e5, 13px 13px #1274e5, 14px 14px #1274e5, 15px 15px #1274e5, 16px 16px #1274e5, 17px 17px #1274e5, 18px 18px #1274e5, 19px 19px #1274e5, 20px 20px #1274e5, 21px 21px #1274e5, 22px 22px #1274e5, 23px 23px #1274e5, 24px 24px #1274e5, 25px 25px #1274e5, 26px 26px #1274e5, 27px 27px #1274e5, 28px 28px #1274e5, 29px 29px #1274e5, 30px 30px #1274e5, 31px 31px #1274e5, 32px 32px #1274e5, 33px 33px #1274e5, 34px 34px #1274e5, 35px 35px #1274e5, 36px 36px #1274e5, 37px 37px #1274e5, 38px 38px #1274e5, 39px 39px #1274e5, 40px 40px #1274e5, 41px 41px #1274e5, 42px 42px #1274e5, 43px 43px #1274e5, 44px 44px #1274e5, 45px 45px #1274e5, 46px 46px #1274e5, 47px 47px #1274e5, 48px 48px #1274e5, 49px 49px #1274e5, 50px 50px #1274e5, 51px 51px #1274e5, 52px 52px #1274e5, 53px 53px #1274e5, 54px 54px #1274e5, 55px 55px #1274e5, 56px 56px #1274e5, 57px 57px #1274e5, 58px 58px #1274e5, 59px 59px #1274e5, 60px 60px #1274e5, 61px 61px #1274e5, 62px 62px #1274e5, 63px 63px #1274e5, 64px 64px #1274e5, 65px 65px #1274e5, 66px 66px #1274e5, 67px 67px #1274e5, 68px 68px #1274e5, 69px 69px #1274e5, 70px 70px #1274e5, 71px 71px #1274e5, 72px 72px #1274e5, 73px 73px #1274e5, 74px 74px #1274e5, 75px 75px #1274e5, 76px 76px #1274e5, 77px 77px #1274e5, 78px 78px #1274e5, 79px 79px #1274e5, 80px 80px #1274e5, 81px 81px #1274e5, 82px 82px #1274e5, 83px 83px #1274e5, 84px 84px #1274e5, 85px 85px #1274e5, 86px 86px #1274e5, 87px 87px #1274e5, 88px 88px #1274e5, 89px 89px #1274e5, 90px 90px #1274e5, 91px 91px #1274e5, 92px 92px #1274e5, 93px 93px #1274e5, 94px 94px #1274e5, 95px 95px #1274e5, 96px 96px #1274e5, 97px 97px #1274e5, 98px 98px #1274e5, 99px 99px #1274e5, 100px 100px #1274e5, 101px 101px #1274e5, 102px 102px #1274e5, 103px 103px #1274e5, 104px 104px #1274e5, 105px 105px #1274e5, 106px 106px #1274e5, 107px 107px #1274e5, 108px 108px #1274e5, 109px 109px #1274e5, 110px 110px #1274e5, 111px 111px #1274e5, 112px 112px #1274e5, 113px 113px #1274e5, 114px 114px #1274e5, 115px 115px #1274e5, 116px 116px #1274e5, 117px 117px #1274e5, 118px 118px #1274e5, 119px 119px #1274e5, 120px 120px #1274e5, 121px 121px #1274e5, 122px 122px #1274e5, 123px 123px #1274e5, 124px 124px #1274e5, 125px 125px #1274e5, 126px 126px #1274e5, 127px 127px #1274e5, 128px 128px #1274e5, 129px 129px #1274e5, 130px 130px #1274e5, 131px 131px #1274e5, 132px 132px #1274e5, 133px 133px #1274e5, 134px 134px #1274e5, 135px 135px #1274e5, 136px 136px #1274e5, 137px 137px #1274e5, 138px 138px #1274e5, 139px 139px #1274e5, 140px 140px #1274e5, 141px 141px #1274e5, 142px 142px #1274e5, 143px 143px #1274e5, 144px 144px #1274e5, 145px 145px #1274e5, 146px 146px #1274e5, 147px 147px #1274e5, 148px 148px #1274e5, 149px 149px #1274e5, 150px 150px #1274e5, 151px 151px #1274e5, 152px 152px #1274e5, 153px 153px #1274e5, 154px 154px #1274e5, 155px 155px #1274e5, 156px 156px #1274e5, 157px 157px #1274e5, 158px 158px #1274e5, 159px 159px #1274e5, 160px 160px #1274e5, 161px 161px #1274e5, 162px 162px #1274e5, 163px 163px #1274e5, 164px 164px #1274e5, 165px 165px #1274e5, 166px 166px #1274e5, 167px 167px #1274e5, 168px 168px #1274e5, 169px 169px #1274e5, 170px 170px #1274e5, 171px 171px #1274e5, 172px 172px #1274e5, 173px 173px #1274e5, 174px 174px #1274e5, 175px 175px #1274e5, 176px 176px #1274e5, 177px 177px #1274e5, 178px 178px #1274e5, 179px 179px #1274e5, 180px 180px #1274e5, 181px 181px #1274e5, 182px 182px #1274e5, 183px 183px #1274e5, 184px 184px #1274e5, 185px 185px #1274e5, 186px 186px #1274e5, 187px 187px #1274e5, 188px 188px #1274e5, 189px 189px #1274e5, 190px 190px #1274e5, 191px 191px #1274e5, 192px 192px #1274e5, 193px 193px #1274e5, 194px 194px #1274e5, 195px 195px #1274e5, 196px 196px #1274e5, 197px 197px #1274e5, 198px 198px #1274e5, 199px 199px #1274e5, 200px 200px #1274e5, 201px 201px #1274e5, 202px 202px #1274e5, 203px 203px #1274e5, 204px 204px #1274e5, 205px 205px #1274e5, 206px 206px #1274e5, 207px 207px #1274e5, 208px 208px #1274e5, 209px 209px #1274e5, 210px 210px #1274e5, 211px 211px #1274e5, 212px 212px #1274e5, 213px 213px #1274e5, 214px 214px #1274e5, 215px 215px #1274e5, 216px 216px #1274e5, 217px 217px #1274e5, 218px 218px #1274e5, 219px 219px #1274e5, 220px 220px #1274e5, 221px 221px #1274e5, 222px 222px #1274e5, 223px 223px #1274e5, 224px 224px #1274e5, 225px 225px #1274e5, 226px 226px #1274e5, 227px 227px #1274e5, 228px 228px #1274e5, 229px 229px #1274e5, 230px 230px #1274e5, 231px 231px #1274e5, 232px 232px #1274e5, 233px 233px #1274e5, 234px 234px #1274e5, 235px 235px #1274e5, 236px 236px #1274e5, 237px 237px #1274e5, 238px 238px #1274e5, 239px 239px #1274e5, 240px 240px #1274e5, 241px 241px #1274e5, 242px 242px #1274e5, 243px 243px #1274e5, 244px 244px #1274e5, 245px 245px #1274e5, 246px 246px #1274e5, 247px 247px #1274e5, 248px 248px #1274e5, 249px 249px #1274e5, 250px 250px #1274e5, 251px 251px #1274e5, 252px 252px #1274e5, 253px 253px #1274e5, 254px 254px #1274e5, 255px 255px #1274e5, 256px 256px #1274e5, 257px 257px #1274e5, 258px 258px #1274e5, 259px 259px #1274e5, 260px 260px #1274e5, 261px 261px #1274e5, 262px 262px #1274e5, 263px 263px #1274e5, 264px 264px #1274e5, 265px 265px #1274e5, 266px 266px #1274e5, 267px 267px #1274e5, 268px 268px #1274e5, 269px 269px #1274e5, 270px 270px #1274e5, 271px 271px #1274e5, 272px 272px #1274e5, 273px 273px #1274e5, 274px 274px #1274e5, 275px 275px #1274e5, 276px 276px #1274e5, 277px 277px #1274e5, 278px 278px #1274e5, 279px 279px #1274e5, 280px 280px #1274e5, 281px 281px #1274e5, 282px 282px #1274e5, 283px 283px #1274e5, 284px 284px #1274e5, 285px 285px #1274e5, 286px 286px #1274e5, 287px 287px #1274e5, 288px 288px #1274e5, 289px 289px #1274e5, 290px 290px #1274e5, 291px 291px #1274e5, 292px 292px #1274e5, 293px 293px #1274e5, 294px 294px #1274e5, 295px 295px #1274e5, 296px 296px #1274e5, 297px 297px #1274e5, 298px 298px #1274e5, 299px 299px #1274e5, 300px 300px #1274e5; }
+
+#works { margin: auto; max-width: 1280px; min-width: 1080px; }
+
+#works ul li { width: 24%; float: left; margin: 0.5%; }
+
+#works ul li.end a:before { display: none; }
+
+#works ul li:hover img { transform: scale(1.2); }
+
+#works ul li a { display: block; overflow: hidden; border: 10px solid #fff; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); background-color: #fff; position: relative; }
+
+#works ul li a:before { content: "loading..."; display: block; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-transform: uppercase; font-size: 14px; animation: ani 0.2s infinite alternate; }
+
+#works ul li a .imgBox { overflow: hidden; }
+
+#works ul li a .infoBox h2 { font-size: 20px; font-weight: 700; margin-top: 20px; }
+
+#works ul li a .infoBox p { line-height: 1.3; margin-top: 10px; font-size: 14px; }
+
+#works ul li a .infoBox .point { margin-top: 10px; font-size: 18px; padding-top: 10px; border-top: 1px solid #000; }
+
+#works ul li a .infoBox .point span { font-weight: 700; text-transform: uppercase; }
+
+#works ul li a img { width: 100%; transition: transform 0.25s ease; vertical-align: top; opacity: 1; position: relative; }
+
+.filter { margin-bottom: 50px; text-align: center; }
+
+.filter li { display: inline-block; margin: 0 5px; }
+
+.filter li.on a { background-color: #d31d1d; }
+
+.filter li a { padding: 10px 50px; color: #fff; transition: all 0.5s ease; background-color: #000; border-radius: 100px; }
+
+#myVideo { display: none; }
+
+.cursor { width: 10px; height: 10px; position: fixed; top: 0; left: 0; transform: translate(-50%, -50%); background-color: #fff; z-index: 99999999; border-radius: 100%; user-select: none; pointer-events: none; transition: transform 0.2s ease; }
+
+.cursor.on { background-image: url("../images/bgCursor.png"); background-repeat: no-repeat; background-size: contain; transform: scale(8); box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); }
+
+.cursorFollower { width: 20px; height: 20px; position: fixed; top: 0; left: 0; transform: translate(-50%, -50%); transition: opacity 0.25s ease; background-color: #fff; opacity: 0.6; z-index: 99999998; border-radius: 100%; user-select: none; pointer-events: none; }
+
+.cursorFollower.on { opacity: 0; }
+
+.fancybox-active { cursor: default; }
+
+.fancybox-active button { cursor: pointer; }
+
+.fancybox-active a { cursor: default; }
+
+.fancybox-active .cursor { display: none; }
+
+.fancybox-active .cursorFollower { display: none; }
+
+@keyframes ani { 0% { opacity: 0; }
+  100% { opacity: 1; } }

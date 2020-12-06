@@ -1,0 +1,7 @@
+*.zip
+*.psd
+*.pptx
+*.docx
+**/00_plan/
+_ing/
+**/node_modules/

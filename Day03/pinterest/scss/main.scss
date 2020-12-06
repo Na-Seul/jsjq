@@ -1,0 +1,209 @@
+@function makelongshadow($color) {
+    $val: 0px 0px $color;
+    @for $i from 1 through 300 {
+      $val: #{$val}, #{$i}px #{$i}px #{$color};
+    }
+    @return $val;
+  }
+  
+  @mixin longshadow($color) {
+    text-shadow: makelongshadow($color);
+  }
+
+* {
+    box-sizing: border-box;
+    //cursor: none;
+}
+body {
+    //margin-right: -17px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    background-color: #333;
+    //cursor: none;//실제 커서는 가리기
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: none;
+}
+button {
+    cursor: none;
+}
+#title {
+    margin: 100px 0;
+    font-size: 48px;
+    font-weight: 300;
+    color:#fff;
+    text-align: center;
+    @include longshadow(darken(rgb(34, 129, 238), 5% ));
+
+}
+#works {
+    margin: auto;
+    max-width:1280px;
+    min-width: 1080px;
+    ul {
+        li {
+            width:24%;
+            float: left;
+            margin:0.5%;
+            &.end a:before {
+                display: none;
+            }
+            &:hover {
+                img {
+                    transform:scale(1.2);
+                }
+            }
+            a {
+                display: block;
+                overflow: hidden;
+                border: 10px solid #fff;
+                box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+                background-color: #fff;
+                position: relative;
+                &:before {
+                    content: "loading...";
+                    display: block;
+                    position: absolute;
+                    left:50%;
+                    top:50%;
+                    transform:translate(-50%,-50%);
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    animation: ani 0.2s infinite alternate;
+                }
+                .imgBox {
+                    overflow: hidden;
+                }
+                .infoBox {
+                    h2 {
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin-top: 20px;
+                    }
+                    p {
+                        line-height: 1.3;
+                        margin-top: 10px;
+                        font-size: 14px;
+                    }
+                    .point {
+                        margin-top: 10px;
+                        font-size: 18px;
+                        padding-top: 10px;
+                        border-top: 1px solid #000;
+                        span {
+                            font-weight: 700;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                img {
+                    width:100%;
+                    transition: transform 0.25s ease;
+                    vertical-align: top;
+                    opacity: 1;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+.filter {
+    margin-bottom: 50px;
+    text-align: center;
+    li {
+        display: inline-block;
+        margin: 0 5px;
+        &.on {
+            a {
+                background-color: rgb(211, 29, 29);
+            }
+        }
+        a {
+            padding:10px 50px;
+            color:#fff;
+            transition: all 0.5s ease;
+            background-color: #000;
+            border-radius: 100px;
+        }
+    }
+}
+
+#myVideo {
+    display: none;
+    
+}
+
+.cursor {
+    width:10px;
+    height: 10px;
+    position: fixed;//스크롤바가 생길 경우를 대비하여 무조건 fixed
+    top:0;
+    left:0;
+    transform:translate(-50%,-50%);
+    background-color: #fff;
+    z-index: 99999999;
+    border-radius: 100%;
+    user-select: none;
+    pointer-events: none;//클릭할 때 마다 커서 이미지가 막는 것을 방지
+    transition:transform 0.2s ease;
+    //mix-blend-mode: difference;
+    &.on {
+        background-image: url("../images/bgCursor.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform:scale(8);
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    }
+}
+.cursorFollower {
+    width:20px;
+    height: 20px;
+    position: fixed;
+    top:0;
+    left:0;
+    transform:translate(-50%,-50%);
+    transition: opacity 0.25s ease;
+    background-color: #fff;
+    opacity: 0.6;
+    z-index: 99999998;
+    border-radius: 100%;
+    user-select: none;
+    pointer-events: none;
+    &.on {
+        opacity: 0;
+    }
+}
+.fancybox-active {
+    cursor: default;
+    button {
+        cursor: pointer;
+    }
+    a {
+        cursor: default;
+    }
+    .cursor {
+        display: none;
+    }
+    .cursorFollower {
+        display: none;
+    }
+}
+
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+//http://naver.me/5WaQxmcp
+
+
+

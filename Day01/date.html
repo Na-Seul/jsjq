@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/clock.css">
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <header id="header"></header>
+    <script>
+        function changeHeader () {
+            let st = $(window).scrollTop();
+            //scrollTop 값 확인
+            //console.log("st: ",st);
+
+            if(st > 50){
+                //st 값이 50 초과면 scroll 클래스를 붙이고
+                $("#header").addClass("scroll");
+            }else{
+                //st 값이 50 이하면 scroll 클래스를 제거하라
+                $("#header").removeClass("scroll");
+            }
+            if(st > 350){
+                //st 값이 50 초과면 scroll 클래스를 붙이고
+                $("#lnb").addClass("scroll");
+            }else{
+                //st 값이 50 이하면 scroll 클래스를 제거하라
+                $("#lnb").removeClass("scroll");
+            }
+        }
+        //웹이 실행되면 scroll 이벤트를 실행해라
+        $(window).on("scroll",changeHeader);//콜백함수
+    </script>
+
+    <div id="subVisula"></div>
+    <!-- 중간에 있다가 스크롤이 지나면 위에 붙는 기능 -->
+    <nav id="lnb"></nav>
+    <h2>이게 조금 이상하데요</h2>
+
+    <!-- 시계 구현 -->
+    <div id="clock">
+        <div class="sec"></div>
+        <div class="min"></div>
+        <div class="hour"></div>
+    </div>
+    <script>
+        let now = new Date();
+        console.log("now: ",now);
+        
+        let sec = now.getSeconds();
+        let min = now.getMinutes();
+        let hour = now.getHours();
+        let time = hour+":"+min+":"+sec;
+        console.log("한번 실행: ",time);
+
+        function addZero(num){
+            if (num<10){
+                return "0" + num;
+            }else{
+                return num;
+            }
+        }
+        let makeTime = function(){
+            let now = new Date();
+            let milli = now.getMilliseconds();
+            let sec = addZero(now.getSeconds());
+            let min = addZero(now.getMinutes());
+            let hour = addZero(now.getHours());
+
+            let time = hour+":"+min+":"+sec;
+            console.log("윈도우 실행: ",time);
+            
+            //텍스트로 사용하는 것은 ``로 묶고 값으로 사용하는 것은 ${}로 묶는다
+            //ecma 2015버전부터 탑재된 기능으로 IE 6-10 호환 안됨
+            //전에는 분리를 위해 모두 ""로 묶고 값으로 사용하는 것은 ""를 제거해주었다
+            //$(".sec").css({transform:"rotate("+sec*6+"deg)"});
+            $(".sec").css({transform:`rotate(${sec*6+milli*0.006}deg)`});
+            $(".min").css({transform:`rotate(${min*6+sec*0.1}deg)`});
+            $(".hour").css({transform:`rotate(${hour*30+min*0.5}deg)`});
+
+            if(hour>15 || hour<08){
+                //javascript에서 css를 바로 제어하는 것은 좋지 않음
+                //$("body").css({backgroundColor: "#000"});
+                $("body").addClass("night");
+                $("#clock").addClass("night");
+            }else{
+                $("body").removeClass("night");
+                $("#clock").removeClass("night");
+            }
+        }
+        setInterval(makeTime,10);//윈도우가 함수를 호출
+        //makeTime();//내가 함수를 호출
+    </script>
+</body>
+</html>

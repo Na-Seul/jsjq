@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gsap</title>
+    <link rel="stylesheet" href="../css/layout.css">
+    <script src="../js/gsap/gsap.min.js"></script>
+</head>
+<body>
+    <div class="box" id="red">Red</div>
+    <div class="box" id="green">Green</div>
+    <div class="box" id="blue">Blue</div>
+    <script>
+        gsap.to(".box", {
+            x:500,
+            duration:1,
+            stagger:0.1,
+            repeat:-1,
+            //yoyo:true,
+            //backgroundColor: "#000",
+            ease: "bounce"
+            //bounce.out(defualt): 끝에서 바운스
+            //bounce.in: 시작에서 바운스
+            //bounce.inout: 시작과 끝에서 바운스
+        });
+
+
+        let jang = {
+            name: "장성호",
+            height: 180,
+            iq: 130
+        }
+        console.log(jang.name);//객체 안의 값 사용법
+    </script>
+</body>
+</html>

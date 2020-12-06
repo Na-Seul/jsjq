@@ -1,0 +1,68 @@
+body {
+    background-image: url("../images/main/mainVisual03.jpg");
+}
+
+
+#skip {
+    display:none;
+}
+.hidden {
+    display:none;
+}
+#header {
+
+}
+#logo {
+    position: absolute; /* static / relative / absolute  */
+    top:12px;
+    
+}
+#gnb {
+    text-align: center;
+    font-size: 0;
+    color:#fff;
+}
+#gnb .list > li {
+    display:inline-block;
+    vertical-align:top;
+    /* border: 1px solid #000; */
+}
+#gnb .list .depth01 {
+    font-size: 18px;
+    font-weight: bold;
+    display:block;
+    padding:0 50px;
+    height: 90px;
+    line-height: 90px;
+    font-weight: bold;
+}
+#gnb .list > li:hover .depth01 {
+    background-color: #bf0c14;
+}
+#gnb .list > li:hover .depth02 {
+    display: block;
+}
+#gnb .list .depth02 {
+    font-size: 16px;
+    background-color: #bf0c14;
+    padding:15px 10px 25px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display:none;
+}
+
+#gnb .list .depth02 a {
+    display:block;
+    padding:10px 0;
+}
+#gnb .list .depth02 a:hover {
+    background-color: #97070e;
+}
+
+
+
+
+
+
+
+

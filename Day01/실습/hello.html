@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <input type="text" placeholder="키를 입력하세요." id="height">
+    <input type="text" placeholder="몸무게를 입력하세요." id="weight">
+    <button id="btn">결과보기</button>
+    <textarea name="" cols="30" rows="10" id="result"></textarea>
+    <script>
+        
+        //declation  /  
+        function resultBmi(height,weight) {
+            var bmi = Math.round( weight/Math.pow(height/100,2)*100 ) / 100;
+            return bmi;
+        }
+        let resultBmi02 = function(height,weight) {
+            var bmi = Math.round( weight/Math.pow(height/100,2)*100 ) / 100;
+            return bmi;
+        }
+
+        
+
+
+        var bmi = resultBmi02(180,99);
+        
+        if(bmi<18.5) {
+            console.log("저체중");
+        } else if(bmi>=18.5  &&  bmi < 23){
+            console.log("정상");
+        } else if(bmi>=23 && bmi<25) {
+            console.log("과체중");
+        } else if(bmi>=25 && bmi<30) {
+            console.log("비만");
+        } else if(bmi>=30 && bmi<35) {
+            console.log("고도비만");
+        } else {
+            console.log("죽을 날이 가깝습니다.");
+        }
+        //console.log("bmi", bmi);
+        
+        
+    </script>
+</body>
+</html>

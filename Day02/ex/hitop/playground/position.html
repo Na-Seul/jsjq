@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            min-height: 3000px;
+        }
+        .box {
+            width:200px;
+            height: 200px;
+            line-height: 200px;
+            font-size: 24px;
+            text-align: center;
+            color:#fff;
+        }
+        .red {
+            background-color: #f00;
+            /* margin-top: 100px; */
+            position: absolute;
+            top:50px;
+            left:50px;
+            right:50px;
+            z-index: 10;
+            width:auto;
+        }
+        .green {
+            background-color: #0f0;
+            position: relative;
+            z-index: 11;
+        }
+        .blue {
+            background-color: #00f;
+        }
+        .son {
+            background-color: #999;
+            padding:100px;
+            position: relative;
+        }
+        .parent {
+            background-color: #333;
+            padding:100px;
+            margin-top: 100px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="son">
+            <div class="box red"><span>r</span><span>e</span><span>d</span></div>
+            <div class="box green"><span>g</span><span>r</span><span>e</span><span>e</span><span>n</span></div>
+            <div class="box blue">blue</div>
+        </div>
+    </div>
+</body>
+</html>
