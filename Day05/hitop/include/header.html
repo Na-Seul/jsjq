@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTIOP</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Titillium+Web:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/contents.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bc86526391a6084818dc7b286bb1d0e0&libraries=services"></script>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/gsap/gsap.min.js"></script>
+    <!-- 12.19 팝업 쿠키 js 추가 -->
+    <script src="../js/js.cookie.min.js"></script>
+    <script src="../js/common.js" defer></script>
+</head>
+
+<body>
+    <div id="skip">
+        <a href="">본문바로가기</a>
+    </div>
+    <header id="header">
+        <h1 id="logo">
+            <a href="./">
+                <img src="../images/layout/logo.png" alt="하이탑 로고">
+            </a>
+        </h1>
+        <nav id="gnb">
+            <h2 class="hidden">global navigation</h2>
+            <ul class="list">
+                <li>
+                    <a href="summary.html" class="depth01">Company</a>
+                    <? include("../include/gnb01.html"); ?>
+                </li>
+                <li>
+                    <a href="business.html" class="depth01">Business</a>
+                    <? include("../include/gnb02.html"); ?>
+                </li>
+                <li>
+                    <a href="" class="depth01">PR</a>
+                    <? include("../include/gnb03.html"); ?>
+                </li>
+                <li>
+                    <a href="" class="depth01">Customer</a>
+                    <? include("../include/gnb04.html"); ?>
+                </li>
+                <li>
+                    <a href="" class="depth01">Recruit</a>
+                    <? include("../include/gnb05.html"); ?>
+                </li>
+            </ul>
+        </nav>
+        <div class="utilMenu">
+            <a href="" class="btnOnline">온라인 견적문의</a>
+            <button class="btnSitemap">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <!-- header end-->

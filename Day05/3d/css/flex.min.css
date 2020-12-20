@@ -1,0 +1,1 @@
+#flex{height:100vh;display:flex;flex-direction:row;justify-content:flex-start;align-items:stretch;flex-wrap:wrap}#flex .box{flex:1 1 25%}#flex .box:nth-child(1){background-color:#f14c4c}#flex .box:nth-child(2){background-color:#db7d24}#flex .box:nth-child(3){background-color:#c5e415}#flex .box:nth-child(4){background-color:#87e4d7}

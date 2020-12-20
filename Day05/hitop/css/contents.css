@@ -1,0 +1,269 @@
+.subVisual { height: 350px; position: relative; z-index: 2; background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; }
+
+.subVisual#subVisual01 { background-image: url("../images/contents/subVisual01.jpg"); }
+
+.subVisual#subVisual02 { background-image: url("../images/contents/subVisual02.jpg"); }
+
+.subVisual#subVisual03 { background-image: url("../images/contents/subVisual03.jpg"); }
+
+.subVisual#subVisual04 { background-image: url("../images/contents/subVisual04.jpg"); }
+
+.subVisual#subVisual05 { background-image: url("../images/contents/subVisual05.jpg"); }
+
+.subVisual .titleBox { position: relative; top: 150px; color: #fff; text-align: center; }
+
+.subVisual .titleBox h2 { margin-bottom: 15px; font-size: 48px; color: #bf0c14; font-weight: 700; }
+
+.h4 { position: relative; margin-bottom: 30px; padding-left: 20px; font-size: 28px; font-weight: 700; }
+
+.h4:before { content: ''; display: block; width: 4px; height: 30px; position: absolute; top: 50%; left: 0; background: #bf0c14; background: linear-gradient(180deg, #bf0c14 0%, #bf0c14 50%, #d9d9d9 50%, #d9d9d9 100%); transform: translateY(-50%); }
+
+.tab .menu ul li { height: 60px; margin-left: -1px; text-align: center; line-height: 60px; border: 1px solid #d9d9d9; box-sizing: border-box; cursor: pointer; }
+
+.tab .menu ul li.on { color: #fff; background-color: #bf0c14; border-color: #bf0c14; }
+
+.tab .menu ul li:nth-child(1) { margin-left: 0; }
+
+.tab.tab02 .menu ul { margin-right: -1px; }
+
+.tab.tab02 .menu ul li { width: 50%; }
+
+.tab.tab03 .menu ul { margin-right: -2px; }
+
+.tab.tab03 .menu ul li { width: 33.33%; }
+
+.tab.tab04 .menu ul { margin-right: -3px; }
+
+.tab.tab04 .menu ul li { width: 25%; }
+
+.tab.tab05 .menu ul { margin-right: -4px; }
+
+.tab.tab05 .menu ul li { width: 20%; }
+
+.tab .contents > ul > li { display: none; }
+
+.tab .contents > ul > li:nth-child(1) { display: block; }
+
+#lnb { width: 100%; height: 50px; position: absolute; bottom: 0; color: #fff; background-color: rgba(0, 0, 0, 0.5); }
+
+#lnb .btnHome { display: block; width: 50px; height: 50px; float: left; position: relative; text-align: center; line-height: 50px; border-right: 1px solid rgba(255, 255, 255, 0.2); border-left: 1px solid rgba(255, 255, 255, 0.2); }
+
+#lnb .btnHome .home { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+
+#lnb .dropMenu { width: 250px; float: left; text-align: center; border-right: 1px solid rgba(255, 255, 255, 0.2); }
+
+#lnb .dropMenu a { display: block; height: 50px; position: relative; line-height: 50px; }
+
+#lnb .dropMenu a .arrow { right: 20px; transition: all 0.25s ease; position: absolute; top: 50%; transform: translateY(-50%); }
+
+#lnb .dropMenu a.on .arrow { transform: translateY(-50%) rotate(180deg); }
+
+#lnb .dropMenu ul { display: none; border: 1px solid #d9d9d9; border-top: none; background-color: #fff; }
+
+#lnb .dropMenu ul a { color: #111; border-bottom: 1px solid #d9d9d9; }
+
+.subContents { padding: 100px 0; min-height: 500px; }
+
+.subContents .contentsTitleBox { margin-bottom: 50px; text-align: center; }
+
+.subContents .contentsTitleBox h3 { font-size: 42px; font-weight: 700; }
+
+.subContents .contentsTitleBox h3:after { content: ""; display: block; width: 30px; height: 3px; margin: 30px auto 0; background-color: #bf0c14; }
+
+#summary .summaryTop { position: relative; padding-left: 50%; }
+
+#summary .summaryTop .txt { width: 50%; height: 100%; position: absolute; top: 0; left: 0; color: #fff; text-align: center; background: url("../images/contents/bgLogo.png") #bf0c14 100% 100% no-repeat; }
+
+#summary .summaryTop .txt .inner { width: 100%; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+
+#summary .summaryTop .txt .inner .main { font-size: 42px; line-height: 1.2; font-weight: 700; }
+
+#summary .summaryTop .txt .inner .main:after { content: ''; display: block; width: 40px; height: 2px; margin: 20px auto; background-color: #fff; }
+
+#summary .summaryTop .txt .inner .sub { font-size: 20px; line-height: 1.5; }
+
+#summary .summaryTop .img { width: 50%; }
+
+#summary .summaryDesc { margin-top: 50px; text-align: center; }
+
+#summary .summaryDesc p { margin-bottom: 30px; line-height: 1.5; }
+
+#summary .summaryDesc .main { font-size: 40px; line-height: 1.2; font-weight: 300; }
+
+#summary .summaryDesc .main strong { display: block; font-weight: 700; }
+
+#summary .summaryDesc .main strong span { color: #bf0c14; }
+
+#greeting .img { float: left; }
+
+#greeting .txt { width: 600px; float: left; margin-left: 80px; }
+
+#greeting .txt p { margin-bottom: 30px; line-height: 1.5; word-break: keep-all; }
+
+#greeting .txt .main { font-size: 40px; line-height: 1.2; font-weight: 300; }
+
+#greeting .txt .main strong { color: #bf0c14; font-weight: 700; }
+
+#philosophy { padding-bottom: 0; }
+
+#philosophy .philosophyTop { position: relative; }
+
+#philosophy .philosophyTop .txt { width: calc(50% - 40px); position: absolute; top: 40px; bottom: 40px; left: 40px; padding: 40px; color: #fff; background-color: rgba(191, 12, 20, 0.8); box-sizing: border-box; }
+
+#philosophy .philosophyTop .txt .eng { font-size: 18px; letter-spacing: 1em; }
+
+#philosophy .philosophyTop .txt p { line-height: 1.5; }
+
+#philosophy .philosophyTop .txt .main { margin: 10px 0; font-size: 40px; line-height: 1.2; font-weight: 300; }
+
+#philosophy .philosophyTop .txt .main:after { content: ''; display: block; width: 40px; height: 2px; margin: 20px 0; background-color: #fff; }
+
+#philosophy .philosophyTop .txt .main strong { font-weight: 500; }
+
+#philosophy .strategy { margin-top: 50px; text-align: center; }
+
+#philosophy .strategy .titleBox { margin-bottom: 50px; }
+
+#philosophy .strategy .titleBox h4 { margin-bottom: 20px; font-size: 18px; font-weight: 500; }
+
+#philosophy .strategy .titleBox h4 span { display: inline-block; padding: 15px 30px; border: 2px solid #bf0c14; border-radius: 100px; }
+
+#philosophy .strategy .titleBox p { line-height: 1.5; }
+
+#philosophy .strategy01 li { width: 33.33%; position: relative; }
+
+#philosophy .strategy01 li:before { content: ''; display: block; width: 1px; height: 100%; position: absolute; top: 0; left: 0; background-color: #d9d9d9; }
+
+#philosophy .strategy01 li:nth-child(1):before { display: none; }
+
+#philosophy .strategy01 li .img { margin-bottom: 30px; }
+
+#philosophy .strategy01 li .txt { padding: 0 50px; line-height: 1.5; word-break: keep-all; }
+
+#philosophy .strategy01 li .txt .main { margin-bottom: 20px; font-size: 24px; }
+
+#philosophy .strategy02 { padding: 100px 0; background-color: #f8f8f8; }
+
+#philosophy .strategy02 li { position: relative; }
+
+#philosophy .strategy02 li .txt { width: 50%; height: 100%; position: absolute; top: 0; padding: 0; background-color: #fff; }
+
+#philosophy .strategy02 li .txt .inner { width: 70%; line-height: 1.5; word-break: keep-all; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+
+#philosophy .strategy02 li .txt .inner .main { margin-bottom: 30px; font-size: 24px; }
+
+#philosophy .strategy02 li .txt .inner .main .no { color: #bf0c14; font-weight: 700; }
+
+#philosophy .strategy02 li:nth-child(2n+1) { padding-left: 50%; }
+
+#philosophy .strategy02 li:nth-child(2n+1) .txt { left: 0; }
+
+#philosophy .strategy02 li:nth-child(2n) { padding-right: 50%; }
+
+#philosophy .strategy02 li:nth-child(2n) .txt { right: 0; }
+
+#history .tab .contents { margin-top: 100px; }
+
+#history .tab .contents .yearList { position: relative; }
+
+#history .tab .contents .yearList:before { content: ''; display: block; width: 1px; height: calc(100% - 15px); position: absolute; top: 15px; left: 50%; background-color: #d9d9d9; }
+
+#history .tab .contents .yearList > li:nth-child(2n+1) { padding-left: calc(50% + 60px); }
+
+#history .tab .contents .yearList > li:nth-child(2n+1) .year:before { left: -70px; }
+
+#history .tab .contents .yearList > li:nth-child(2n+1) .monthList li { padding-left: 60px; }
+
+#history .tab .contents .yearList > li:nth-child(2n+1) .monthList li .month { position: absolute; top: -2px; left: 0; }
+
+#history .tab .contents .yearList > li:nth-child(2n) { padding-right: calc(50% + 60px); text-align: right; }
+
+#history .tab .contents .yearList > li:nth-child(2n) .year:before { right: -70px; }
+
+#history .tab .contents .yearList > li:nth-child(2n) .monthList li { padding-right: 60px; }
+
+#history .tab .contents .yearList > li:nth-child(2n) .monthList li .month { position: absolute; top: 0; right: 0; }
+
+#history .tab .contents .yearList > li .year { position: relative; margin-bottom: 30px; font-size: 48px; font-weight: 700; }
+
+#history .tab .contents .yearList > li .year:before { content: ''; display: block; width: 10px; height: 10px; position: absolute; top: 15px; border: 5px solid #bf0c14; border-radius: 100%; background-color: #fff; }
+
+#history .tab .contents .yearList > li .monthList li { position: relative; margin: 20px 0; }
+
+#history .tab .contents .yearList > li .monthList li .month { font-size: 20px; font-weight: 700; }
+
+#ci .ciBox { margin-bottom: 80px; }
+
+#ci .ciBox .inner img { float: left; border: 1px solid #d9d9d9; }
+
+#ci .ciBox .inner p { width: 45%; float: left; margin-left: 20px; line-height: 1.5; }
+
+#ci .ciBox .inner p a { display: block; width: 160px; height: 50px; position: relative; margin-top: 30px; color: #fff; text-align: center; line-height: 50px; background-color: #4d4d4d; }
+
+#ci .ciBox .inner p a span { margin-left: 5px; font-size: 18px; }
+
+#ci .ciBox .color { width: calc(50% - 5px); height: 120px; position: relative; margin-top: 30px; color: #fff; }
+
+#ci .ciBox .color .main { left: 30px; font-size: 42px; font-weight: 700; position: absolute; top: 50%; transform: translateY(-50%); }
+
+#ci .ciBox .color .code { right: 30px; position: absolute; top: 50%; transform: translateY(-50%); }
+
+#ci .ciBox .color .code span { display: block; position: relative; margin: 3px 0; padding-left: 10px; }
+
+#ci .ciBox .color .code span:before { content: ''; display: block; width: 3px; height: 3px; left: 0; background-color: #fff; position: absolute; top: 50%; transform: translateY(-50%); }
+
+#ci .ciBox .color.red { float: left; background-color: #bf0c14; }
+
+#ci .ciBox .color.gray { float: right; background-color: #838487; }
+
+#ci .ciBox02 img:nth-child(2) { float: right; }
+
+#location .map { width: 100%; height: 500px; }
+
+#location .tab .contents { margin-top: 50px; position: relative; }
+
+#location .info { margin-top: 50px; }
+
+#location .info .addressTable { width: 100%; background-color: #fff; border-top: 2px solid #bf0c14; }
+
+#location .info .addressTable caption { display: none; }
+
+#location .info .addressTable tbody th { background-color: #f8f8f8; text-align: center; border-bottom: 1px solid #d9d9d9; }
+
+#location .info .addressTable tbody td { padding: 20px; text-align: center; border-bottom: 1px solid #d9d9d9; }
+
+#patent .tab .contents { margin-top: 50px; }
+
+#patent .patentList { margin: -10px; }
+
+#patent .patentList li { width: calc(25% - 20px); padding: 20px; box-sizing: border-box; background-color: #f8f8f8; border: 1px solid #d9d9d9; margin: 10px; text-align: center; }
+
+#patent .patentList li .img { position: relative; border: 1px solid #d9d9d9; overflow: hidden; }
+
+#patent .patentList li .img:before { content: ''; display: block; padding-top: 140%; }
+
+#patent .patentList li .img img { position: absolute; width: 100%; height: 100%; object-fit: cover; left: 0; top: 0; }
+
+#patent .patentList li .desc { margin-top: 20px; line-height: 1.5; }
+
+#patent .patentList li .desc .no { font-size: 14px; color: #999; margin-bottom: 10px; }
+
+#patent .patentList li .desc .title { display: -webkit-box; height: 3em; overflow: hidden; line-height: 1.5; -webkit-line-clamp: 2; }
+
+.pagination { text-align: center; margin-top: 30px; }
+
+.pagination a { width: 30px; height: 30px; line-height: 30px; display: inline-block; vertical-align: top; }
+
+.pagination a.on { background-color: #bf0c14; color: #fff; }
+
+.pagination a span { width: 30px; height: 30px; line-height: 30px; }
+
+.customoverlay { float: left; position: relative; bottom: 85px; border: 1px solid #ccc; border-bottom: 2px solid #ddd; border-radius: 6px; }
+
+.customoverlay:nth-of-type(n) { border: 0; box-shadow: 0px 1px 2px #888; }
+
+.customoverlay a { display: block; overflow: hidden; font-size: 14px; color: #000; text-align: center; text-decoration: none; background: #d95050; background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center; border-radius: 6px; font-weight: bold; }
+
+.customoverlay .title { display: block; margin-right: 35px; padding: 10px 15px; font-size: 14px; text-align: center; background: #fff; font-weight: bold; }
+
+.customoverlay:after { content: ''; width: 22px; height: 12px; position: absolute; bottom: -12px; left: 50%; margin-left: -12px; background: url("https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png"); }

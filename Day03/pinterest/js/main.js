@@ -13,8 +13,9 @@ $.ajax({
 
         //ul에 내용 삽입
         $("#works .grid").append(
+            //class로 item과 category 값 추가
             `
-            <li class="item">
+            <li class="item ${item.category}">
                 <a href="${img}" data-fancybox="${item.category}">
                     <div class="imgBox">
                         <img src="${img}" alt="">
@@ -33,13 +34,41 @@ $.ajax({
     $('#works').imagesLoaded()
     .done(function(instance){
         //isotope 적용
-        $('.grid').isotope({
+        let gallery = $('.grid').isotope({
             // options
             itemSelector: '.item',
             layoutMode: 'masonry',
         });
         //로딩문구 제거
         $("#works li").addClass("end");
+
+        //필터 리스트(all(item)/paint/photo/sketch) 배열화
+        let filterArray = ["item","paint","photo","sketch"]
+        //필터 생성
+        $(".filter li").on("click", function(e){
+            //a태그 이벤트 제어 방법1
+            //e.preventDefault();
+
+            //필터링 방법1
+            //선택리스트의 인덱스
+            let selected = $(this).index();
+            //선택리스트의 인덱스와 동일한 필터리스트의 배열값
+            gallery.isotope({filter:"."+filterArray[selected]});
+
+            //필터링 방법2
+            //임의 속성을 이용한 필터링
+            //HTML에서 임의로 만든 속성은 data-어쩌구 로 작성해야한다
+            //js에서 불러올 때는 data("어쩌구") 로 불러온다
+            //gallery.isotope({filter:"."+$(this).data("filter-word")});
+
+            //선택 리스트 색 변화
+            $(this).addClass("on");
+            $(this).siblings().removeClass("on");
+
+            //a태그 이벤트 제어 방법2
+            return false;
+            console.log("return아래는 동작하지 않아요");
+        });
     });
 });
 

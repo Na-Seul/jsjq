@@ -1,0 +1,110 @@
+@import "vars";
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Poppins", "Noto Sans KR";
+    font-size: 1.6rem;
+
+    &.white {
+        #header {
+            color: #111;
+
+            .inner {
+                #logo {
+                    img {
+                        &.white {opacity: 0;}
+                        &.color {opacity: 1;}
+                    }
+                }
+            }
+        }
+        //swiper용
+        .pagination{
+            .swiper-pagination-bullet{
+                .dot{
+                    background-color: #111;
+                }
+                .name{
+                    background-color: #111;
+                    color: #fff;
+                }
+            }
+            .swiper-pagination-bullet-active{
+                .dot{
+                    background-color: $main-color;
+                }
+                .name{
+                    background-color: $main-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    color: #fff;
+
+    .inner {
+        padding: 0 80px;
+        height: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #logo {
+            img {
+                //로고 이미지
+                position: absolute;
+                opacity: 0;
+                transition: all 0.25s ease-in-out;
+
+                &.white {
+                    opacity: 1;
+                }
+            }
+        }
+
+        #gnb {
+            ul {
+                display: flex;
+
+                li {
+                    a {
+                        display: block;
+                        padding: 20px 40px;
+                        font-weight: 700;
+                        position: relative;
+                        transition: all 0.25s ease-in-out;
+                        &::before {
+                            //gnb li 앞의 동그라미
+                            content: "";
+                            display: block;
+                            width: 6px;
+                            height: 6px;
+                            background-color: $main-color;
+                            border-radius: 100%;
+                            position: absolute;
+                            left: 35px;
+                            top: 0px;
+                            opacity: 0;
+                            transition: all 0.25s ease-in-out;
+                        }
+
+                        &:hover::before {
+                            //gnb li 앞의 동그라미
+                            top: 10px;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

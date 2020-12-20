@@ -1,0 +1,69 @@
+@import "vars";
+// $depth: 930px;//거리 = 가로의 반/tan(360/전체 갯수/2 = 돌린 각도의 반) = 250/tan(15)
+// $angle: 360deg/12;
+// $alpha: 0.8;
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Poppins", "Noto Sans KR";
+    font-size: 1.6rem;
+    background-color: #333;
+}
+
+#main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .carousel {
+        width: 500px;
+        height: 350px;
+        position: relative;
+        perspective: 500px;//소실점 설정: 원근 만들기. 돌아가는 놈의 부모에다가 설정하는 것
+        perspective-origin: 50% -80%;//소실점 위치 바꾸기
+
+        ul {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;//3D 효과: 축을 기준으로 효과 적용. rotate를 주는 부모에다가 설정
+
+            //js로 넘김
+            //transform: translateZ(-$depth);//보는 시각 위치 변경. z를 집어넣은 거리와 동일하게 나오면 됨
+
+            li {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                text-transform: uppercase;
+                color: #fff;
+
+                //js로 넘김
+                //&:nth-child(12n+1){background-color: rgba(230, 89, 7, $alpha); transform: rotateY($angle*n) translateZ($depth);}
+            }
+        }
+    }
+
+    .btns{
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .btn{
+            margin: 0 10px;
+            color: #fff;
+            .material-icons{
+                font-size: 36px;
+            }
+        }
+    }
+}

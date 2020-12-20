@@ -1,0 +1,93 @@
+@import "vars";
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Poppins", "Noto Sans KR";
+    font-size: 1.6rem;
+    background-color: #333;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    margin: 150px 0 150px 0;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 1200px;
+        li{
+            perspective: 500px;//소실점
+            position: relative;
+            flex: 1 0 calc(25% - 20px);
+            margin: 10px;
+            &::before{
+                content: '';
+                display: block;
+                padding-top: 150%;//넓이의 150%
+            }
+            .card{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                transform-style: preserve-3d;//축 기준으로 움직이는 3D효과
+                //transform: rotateY(45deg); //돌리기
+                >div{
+                    background-color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;//뒤로 넘어간거 감추기
+                    //3d 효과
+                    transform-style: preserve-3d;
+                    perspective: 500px;
+                }
+                .front{
+                    background: url(../images/dark-canvas.gif);
+                    img{
+                        width: 100%;
+                        transform: translateZ(100px) scale(0.6);
+                    }
+                }
+                .back{
+                    transform: rotateY(-180deg);//뒤로 붙이기
+                    .info {
+                        transform: translateZ(100px) scale(0.6);
+                        padding: 30px;
+                        .category {
+                            font-size: 1.4rem;
+                            font-weight: 500;
+                        }
+                        .title {
+                            font-size: 4.2rem;
+                            font-weight: 700;
+                            margin-bottom: 30px;
+                            text-shadow:3px 3px 3px rgba(0,0,0,0.1);
+                        }
+                        .depth {
+                            display: inline-block;
+                            padding-bottom: 5px;
+                            border-bottom: 1px solid #f00;
+                            margin-bottom: 80px;
+                        }
+                        .price {
+                            font-size: 24px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

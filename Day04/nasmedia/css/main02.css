@@ -1,0 +1,39 @@
+body { background-color: #111; }
+
+.section .inner { height: 100vh; display: flex; align-items: center; }
+
+#mainVisual .inner { background-color: #111; color: #fff; }
+
+#introduce .inner { background-color: #fff; }
+
+#service .inner { background-color: #111; color: #fff; }
+
+#insight .inner { background-color: #fff; }
+
+#together .inner { background-color: #f52f23; color: #fff; }
+
+#footer .inner { background-color: #111; color: #fff; }
+
+.container { width: 1200px; margin: auto; }
+
+#main { height: 100vh; overflow: hidden; }
+
+#main #mainVisual .slogan .sub { font-size: 18px; }
+
+#main #mainVisual .slogan .main { font-size: 96px; margin-top: 20px; font-weight: 700; }
+
+.pagination { position: fixed; right: 50px; top: 50%; height: 240px; transform: translateY(-50%); z-index: 3; display: flex; flex-direction: column; justify-content: space-between; }
+
+.pagination .swiper-pagination-bullet { width: auto; height: auto; background: none; opacity: 1; color: #111; position: relative; }
+
+.pagination .swiper-pagination-bullet .dot { width: 8px; height: 8px; background-color: #fff; border-radius: 100%; display: inline-block; }
+
+.pagination .swiper-pagination-bullet .name { position: absolute; right: 40px; top: 50%; transform: translateY(-50%); width: auto; white-space: nowrap; padding: 15px 25px; background-color: #fff; border-radius: 100px; opacity: 0; transition: all 0.25s ease; }
+
+.pagination .swiper-pagination-bullet:hover .name { opacity: 1; }
+
+.pagination .swiper-pagination-bullet:last-child { display: none; }
+
+.pagination .swiper-pagination-bullet-active .dot { background-color: #f52f23; }
+
+.pagination .swiper-pagination-bullet-active .name { background-color: #f52f23; color: #fff; }

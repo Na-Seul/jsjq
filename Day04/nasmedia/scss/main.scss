@@ -1,0 +1,49 @@
+@import "vars";
+
+#mainVisual {
+    background-color: #111;
+    color: #fff;
+}
+
+#introduce {}
+
+#service {
+    background-color: #111;
+    color: #fff
+}
+
+#insight {}
+
+#together {
+    background-color: $main-color;
+    color: #fff
+}
+
+#footer {
+    background-color: #111;
+    color: #fff
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+#main {
+    height: 100vh;
+    overflow: hidden;
+
+    #mainVisual {
+        .slogan {
+            .sub {
+                font-size: 18px;
+            }
+
+            .main {
+                font-size: 96px;
+                margin-top: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+}
