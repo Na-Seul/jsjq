@@ -1,0 +1,716 @@
+html {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Nanum Square";
+    color: #fff;
+    line-height: 1.5;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.auto {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    bor der: 1px solid #fff;
+}
+
+.auto:after,
+clearFix:after,
+ul:after,
+dl:afer,
+ol:after {
+    display: block;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    content: "";
+    overflow: hidden;
+    clear: both;
+}
+
+#skipNav {
+    height: 0;
+    overflow: hidden;
+}
+
+#skipNav li a {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: -9999px;
+    left: 0;
+    font-size: 1em;
+    text-align: center;
+    z-index: 999999;
+}
+
+#skipNav li a:focus,
+#skipNav li a.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    font-weight: bold;
+    color: #fff;
+    background: #272727;
+    color: #ffffff;
+}
+
+.tsa {
+    text-align: center;
+}
+
+.tsa #introHeader {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background: url("../images/tsa/bgHeader.png") repeat-x;
+    z-index: 999;
+}
+
+.tsa #introHeader h1 {
+    float: left;
+}
+
+.tsa #introHeader h1 a {
+    display: block;
+    padding: 14px 0;
+}
+
+.tsa #introHeader .btns {
+    margin-top: 21px;
+    margin-left: 245px;
+    float: left;
+    text-align: left;
+}
+
+.tsa #introHeader .btns a {
+    display: block;
+    width: 180px;
+    height: 35px;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 3px;
+    color: #fff;
+    text-indent: 20px;
+    float: left;
+    background: url("../images/tsa/bgArrow.png") no-repeat 140px 50%;
+}
+
+.tsa #introHeader .btns a:first-child {
+    margin-left: 0;
+}
+
+.tsa #introHeader .btns a:hover {
+    opacity: 0.8;
+}
+
+.tsa .section {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    table-layout: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    overflow: hidden;
+}
+
+.tsa .section .tableCell {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    min-height: 100%;
+}
+
+.tsa .section01 .auto {
+    position: relative;
+    z-index: 2;
+}
+
+.tsa .section01 {
+    background-image: url("../images/tsa/bg01.jpg");
+    background-size: cover;
+}
+
+.tsa .section02 {
+    background-image: url("../images/tsa/bg02.jpg");
+    background-size: cover;
+}
+
+.tsa .section03 {
+    background-image: url("../images/tsa/bg03.jpg");
+    background-size: cover;
+}
+
+.tsa .section04 {
+    background-image: url("../images/tsa/bg04.jpg");
+    background-size: cover;
+}
+
+.tsa .section05 {
+    background-image: url("../images/tsa/bg05.jpg");
+    background-size: cover;
+}
+
+.tsa .section06 {
+    background-image: url("../images/tsa/bg06.jpg");
+    background-size: cover;
+}
+
+.tsa .section01 .txt01 {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: italic;
+    color: #fff;
+    line-height: 1;
+}
+
+.tsa .section01 .txt01:after {
+    display: block;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    content: "";
+    background: rgb(201, 223, 8);
+    border-radius: 10px;
+    transform-origin: 0 50%;
+}
+
+/* .tsa .section01 .txt01.on:after {transform: scaleX(1);} */
+.tsa .section01 .txt01 .strongTxt {
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+.tsa .section01 .txt01 .strongTxt span {
+    display: inline-block;
+    position: relative;
+}
+
+.tsa .section01 .txt01 .strongTxt span:before {
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    margin-left: -2px;
+    content: "";
+    background: #fff;
+    border-radius: 50%;
+}
+
+.tsa .section01 .txt02 {
+    position: relative;
+    font-size: 23px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.tsa .section01 .txt03 {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.1;
+    color: #fff;
+}
+
+.tsa .section01 .txt03 span {
+    position: relative;
+}
+
+.tsa .section01 .txt04 {
+    position: relative;
+}
+
+span.br {
+    display: block;
+}
+
+.tsa .section01 .iconScroll {
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    text-align: center;
+    z-index: 3;
+}
+
+
+.tsa .section02 ul {
+    margin: 70px 0 90px;
+}
+
+.tsa .section02 li:first-child {
+    margin-left: 0;
+}
+
+.tsa .section02 li:last-child {
+    margin-right: 0;
+}
+
+.tsa .section02 li {
+    display: inline-block;
+    width: 170px;
+    position: relative;
+    margin: 0 40px;
+    font-size: 0;
+}
+
+.tsa .section02 li .txt {
+    width: 150%;
+    position: absolute;
+    left: 50%;
+    margin-top: 20px;
+    margin-left: -75%;
+    font-size: 20px;
+    font-family: "ntr";
+    letter-spacing: -0.03em;
+}
+
+.tsa .section02 li .txt .cdu {
+    margin-top: 10px;
+    font-size: 13px;
+    opacity: 0.3;
+}
+
+.tsa .section02 .cduBox {
+    display: inline-block;
+    height: 110px;
+    margin-top: 80px;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+
+.tsa .section02 .cduBox img {
+    float: left;
+}
+
+.tsa .section02 .cduBox dl {
+    padding: 17px 30px 20px 30px;
+    float: left;
+    text-align: left;
+}
+
+.tsa .section02 .cduBox dl dt {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.tsa .section02 .cduBox dl dd {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "ntr";
+    letter-spacing: -0.02em;
+}
+
+.tsa .section02 #count {
+    width: 100%;
+    position: absolute;
+    top: -50px;
+    font-size: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.tsa .section03 .mainTxt span {
+    display: inline-block;
+}
+
+.tsa .section03 ul {
+    margin-top: 40px;
+}
+
+.tsa .section03 li {
+    margin-right: 19px;
+    float: left;
+}
+
+.tsa .section03 .auto>ul>li {
+    position: relative;
+}
+
+.tsa .section03 .auto>ul>li:after {
+    display: block;
+    width: 100px;
+    height: 4px;
+    position: absolute;
+    top: 120px;
+    right: -105px;
+    content: "";
+    background: url("../images/tsa/dotLine.png") no-repeat;
+}
+
+.tsa .section03 .auto>ul>li:last-child:after {
+    display: none;
+}
+
+.tsa .section03 li:first-child {
+    margin-right: 82px;
+    z-index: 3;
+}
+
+.tsa .section03 li:last-child {
+    margin-right: 0px;
+}
+
+.tsa .section03 li .listBox {
+    width: 270px;
+    height: 400px;
+    padding: 50px 35px 0;
+    background: #fff;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.tsa .section03 li .listBox .period {
+    font-size: 28px;
+    font-weight: 900;
+    color: #333;
+}
+
+.tsa .section03 li .listBox .task {
+    font-size: 15px;
+    font-weight: 700;
+    color: #808080;
+    font-family: "ntr";
+    letter-spacing: -0.03em;
+}
+
+.tsa .section03 li .listBox .step {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: 700;
+    font-style: italic;
+    color: #1c75bb;
+    font-family: "Nanum Myeongjo";
+    border-bottom: 1px solid #1c75bb;
+}
+
+.tsa .section03 li .listBox li {
+    position: relative;
+    margin-right: 0;
+    margin: 10px 0;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #4c4c4c;
+    float: none;
+    text-align: left;
+    font-family: "ntr";
+    letter-spacing: -0.05em;
+    line-height: 1.4;
+}
+
+.tsa .section03 li .listBox li .blue {
+    color: #5a88ab;
+}
+
+.tsa .section03 li .listBox li:before {
+    display: block;
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    content: "";
+    background: #4c4c4c;
+}
+
+.tsa .section03 li .redBox {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ec1841;
+    border-radius: 20px;
+}
+
+.tsa .section03 .airplane {
+    position: absolute;
+    top: 170px;
+    left: 180px;
+    opacity: 1;
+}
+
+.tsa .section04 ul {
+    margin-top: 40px;
+}
+
+.tsa .section04 li {
+    margin: 15px;
+    float: left;
+}
+
+.tsa .section04 .txtBox {
+    width: 280px;
+    height: 280px;
+    margin-right: 1px;
+    padding: 50px 35px;
+    font-size: 14px;
+    float: left;
+    background: #fff;
+    box-sizing: border-box;
+    color: #4c4c4c;
+    text-align: left;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.tsa .section04 .txtBox .copy {
+    font-family: "ntl";
+    letter-spacing: -0.02em;
+}
+
+.tsa .section04 .txtBox .eng {
+    font-size: 28px;
+    font-weight: 900;
+    color: #333;
+}
+
+.tsa .section04 .txtBox .kor {
+    margin: 20px 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: #f4791f;
+}
+
+.tsa .section04 .imgBox {
+    float: left;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.tsa .section04 li:nth-child(3) .txtBox {
+    margin-left: 1px;
+    float: right;
+}
+
+.tsa .section04 li:nth-child(4) .txtBox {
+    margin-left: 1px;
+    float: right;
+}
+
+.tsa .section04 li:nth-child(4) .txtBox .eng {
+    position: relative;
+}
+
+.tsa .section04 li:nth-child(4) .txtBox .eng span {
+    position: absolute;
+    top: 6px;
+    left: 70px;
+    font-size: 12px;
+    line-height: 1.2;
+    font-family: "ntr";
+    letter-spacing: -0.01em;
+}
+
+
+
+.tsa .section05 ul {
+    margin: 30px -9px 0;
+    font-size: 0;
+}
+
+.tsa .section05 li {
+    display: inline-block;
+    width: 390px;
+    height: 320px;
+    position: relative;
+    margin: 8px;
+    padding: 30px 0;
+    background: #fff;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.tsa .section05 li .period {
+    font-size: 28px;
+    font-weight: 900;
+    color: #333;
+    line-height: 1.2;
+}
+
+.tsa .section05 li .task {
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #808080;
+}
+
+.tsa .section05 li .step {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 700;
+    font-style: italic;
+    color: #179999;
+    font-family: "Nanum Myeongjo";
+    border-bottom: 1px solid #179999;
+}
+
+.tsa .section05 li .desc {
+    font-size: 14px;
+    color: #4c4c4c;
+    font-family: "ntr";
+    letter-spacing: -0.08em;
+    line-height: 1.6;
+}
+
+.tsa .section05 li:nth-child(4),
+.tsa .section05 li:nth-child(5) {
+    height: 260px;
+}
+
+.tsa .section05 li:after {
+    display: block;
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    margin-top: -32px;
+    content: "";
+    background: url("../images/tsa/iconPlus.png") no-repeat;
+}
+
+.tsa .section05 li:nth-child(1):after,
+.tsa .section05 li:nth-child(4):after {
+    display: none;
+}
+
+
+.tsa .section06 .mainTxt {
+    margin-bottom: 25px;
+    font-size: 70px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.tsa .section06 .mainTxt span {
+    display: inline-block;
+}
+
+.tsa .section06 .subTxt {
+    font-size: 40px;
+    font-weight: 900;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.tsa .section06 .subTxt strong {
+    font-weight: 900;
+    vertical-align: top;
+}
+
+.tsa .section06 .txtDash {
+    margin: 50px 0 10px;
+    font-size: 23px;
+    letter-spacing: 5px;
+}
+
+.tsa .section06 .shortcut {
+    margin: 15px 0 50px;
+    font-size: 43px;
+    font-weight: 100;
+    letter-spacing: -0.02em;
+}
+
+.tsa .section06 .shortcut strong {
+    font-weight: 900;
+}
+
+.tsa .section06 a {
+    display: inline-block;
+    width: 280px;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 57px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: left;
+    text-indent: 30px;
+    background: url("../images/tsa/bgArrow.png") no-repeat 230px 50%;
+}
+
+.tsa .section06 a:hover {
+    opacity: 0.8;
+}
+
+
+
+.tsa .title {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 0px 30px;
+    font-weight: 700;
+    font-style: italic;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    font-family: "Nanum Myeongjo";
+    letter-spacing: 3px;
+}
+
+.tsa .mainTxt {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.orange {
+    color: #fedd9d;
+}
+
+.green {
+    color: #c0e3b5;
+}
+
+.pink {
+    color: #ffcdd7;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+}
+
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span {
+    width: 18px;
+    height: 18px;
+    left: 4px;
+    background: url("../images/tsa/gnbOn.png");
+}
+
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
+    margin: 0;
+}

@@ -1,0 +1,24 @@
+.contents{
+    font-size: 24px;
+    padding: 10px;
+}
+
+#mobileNav{
+    width: 90%;
+    height: 400px;
+    position: fixed;
+    bottom: -370px;
+    left: 5%;
+    background-color: #f00;
+    border-radius: 20px 20px 0 0;
+}
+#cover{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    visibility: hidden;
+}
